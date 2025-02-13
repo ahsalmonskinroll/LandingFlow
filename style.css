@@ -1,0 +1,52 @@
+body {
+    font-family: Source Sans Pro;
+}
+
+/* colors */
+.orange {
+    background-color: #F77219;
+}
+
+.white {
+    background-color: #F2F2F2;
+}
+
+.grey {
+    background-color: #a5a5a5;
+}
+
+.black {
+    background-color: #070614;
+}
+
+/* font size */
+.title-24 {
+    font-size: 24px;
+}
+
+.text-16 {
+    font-size: 16px;
+}
+
+.text-12 {
+    font-size: 12px;
+}
+
+/* main */
+.gradient-border {
+    position: relative;
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+    background: white; /* İç kısım rengi */
+    padding: 10px;
+}
+
+.gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: -3px; /* Kenarlığı dışa taşır */
+    border-radius: inherit;
+    background: linear-gradient(to bottom, #F2F2F2 30%, #070614 100%);
+    z-index: -1;
+}
