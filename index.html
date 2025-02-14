@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -25,21 +31,68 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-  <body>
-    <div class="container">
-        <div class="gradient-border">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum obcaecati eaque ipsam illo iure enim aperiam delectus consectetur, a hic. Repellat officia distinctio veniam magnam harum iusto quaerat. Hic, sit!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nobis dignissimos reiciendis assumenda laboriosam. Nobis aut facilis aliquam! Possimus harum veniam itaque porro corrupti quam saepe accusantium vel deserunt! Omnis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores beatae saepe natus architecto consectetur suscipit ad sit recusandae aliquid sequi? Incidunt accusantium porro sequi perspiciatis cupiditate inventore fuga veritatis nesciunt?
-            
+  <body class="container-fluid black">
+    <header>
+      <div class="container mt-3">
+        <div class="row" style="height: 50px">
+          <div class="col-3 d-flex justify-content-start align-items-center">
+            <img class="logo" src="images/logo 1.png" alt="Eventself" />
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-end">
+            <div class="row gradient-border d-flex justify-content-center align-items-center text-16">
+              <div class="col yellow-border">
+                <div class="d-flex justify-content-center gap-2 align-items-center pointer bold">
+                  <img class="icon-boyut" src="images/icons/Home.png" alt="Home"><span>Anasayfa</span>
+                </div>
+              </div>
+                
+                <div class="col ">
+                  <div class="d-flex justify-content-center gap-2 align-items-center pointer">
+                    <img class="icon-boyut" src="images/icons/Book.png" alt="Home"><span>Etkinliklerim</span>
+                  </div>
+                  
+                </div>
+                <div class="col">
+                  <div class=" d-flex justify-content-center gap-2 align-items-center pointer">
+                    <img class="icon-boyut1" src="images/icons/User.png" alt="Home"><span>Profil</span>
+                  </div>
+                  
+                </div>
+                
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center gap-2 align-items-center pointer">
+              <img class="icon-boyut1" src="images/icons/Logout.png" alt="Home"><span>Çıkış</span>
+            </div>
+          </div>
         </div>
-    </div>
-    
+      </div>
+    </header>
+    <main>
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-end">
+          <div class="col-md-7">
+            <article class="grey-border">
+              <div class="inside-nav">
+                <div class="d-flex justify-content-start gap-1 align-items-center pointer">
+                  <img class="icon-boyut1" src="images/icons/Vector.svg" alt="Home"><span>Geri</span>
+                </div>
+              </div>
+              <div class="banner" >
+                <img class="banner-img" src="images/banner.png" alt="Home">
+                <div>dmsödmösmösm</div>
+              </div>
 
-
-
-
-
+            </article>
+          </div>
+          <div class="col-md-3">
+            <aside class="grey-border">sağ içerik</aside>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>mobilde navbar buraya gelecek</footer>
 
     <!-- script -->
     <script
