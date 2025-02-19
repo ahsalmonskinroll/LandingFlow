@@ -32,6 +32,7 @@ body {
 .title-24 {
     font-size: 24px;
     letter-spacing: 0.5px;
+    font-family: "Montserrat", serif;
 }
 
 .text-16 {
@@ -83,6 +84,12 @@ body {
     z-index: -1;
 }
 
+.lg-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .icon-boyut {
     width: 19px;
     height: 20px;
@@ -119,10 +126,13 @@ body {
 .banner-img {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     object-fit: cover;
     z-index: -1;
+    border: 1px solid #a5a5a5;
+    border-radius: 15px;
 }
 
 .overlay-content {
@@ -130,6 +140,7 @@ body {
     position: relative;
     z-index: 1;
     height: 338px;
+    display: grid;
 }
 
 .date {
@@ -154,11 +165,6 @@ body {
 
 .add-button img {
     height: 12px;
-}
-
-.down {
-    bottom: 10px;
-    position: absolute;
 }
 
 .presenter-img {
@@ -240,3 +246,51 @@ body {
 }
 
 /* aside */
+
+/* footer */
+.mobile-nav {
+    display: none;
+}
+
+.little-banner {
+    height: 171px;
+}
+
+.little-banner-img {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    border: 1px solid #a5a5a5;
+    border-radius: 15px;
+}
+
+.little-overlay-content {
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    height: 171px;
+    display: grid;
+}
+
+.little-date {
+    background: #F77219;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 3px 10px;
+    color: #070614;
+}
+
+/* responsive */
+@media (max-width:768px) {
+    .mobile-nav {
+        display: flex;
+    }
+
+    .lg-menu {
+        display: none;
+    }
+}
