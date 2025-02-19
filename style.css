@@ -24,6 +24,10 @@ body {
     background-color: #070614;
 }
 
+.text-black {
+    color: #070614;
+}
+
 /* font*/
 .title-24 {
     font-size: 24px;
@@ -45,6 +49,12 @@ body {
     letter-spacing: 0.5px;
 }
 
+/* hiza */
+.hiza {
+    align-items: center;
+    display: flex;
+}
+
 /* header */
 .logo {
     width: 175.48px;
@@ -52,14 +62,6 @@ body {
     top: 42px;
     left: 42px;
 }
-
-/* .gradient{
-    background: linear-gradient(174deg, white -205%, #070614 86%);
-    padding: 8px;
-    border-radius: 10px;
-    width: 468px;
-    height: 56px;
-} */
 
 .gradient-border {
     position: relative;
@@ -77,7 +79,6 @@ body {
     position: absolute;
     inset: -2px;
     border-radius: inherit;
-    /* background: linear-gradient(34deg, #a5a5a5 28%, #070614 97%); */
     background: linear-gradient(45deg, #fffafa -172%, #070614 67%);
     z-index: -1;
 }
@@ -92,7 +93,7 @@ body {
     height: 18px;
 }
 
-.yellow-border {
+.orange-border {
     border: 2px solid #F77219;
     border-radius: 10px;
     padding: 10px;
@@ -104,10 +105,11 @@ body {
     position: relative;
     border: 2px solid #a5a5a563;
     border-radius: 16px;
-    height: 945px;
+    height: auto;
     padding: 10px;
 }
 
+/* banner */
 .banner {
     position: relative;
     width: 100%;
@@ -122,6 +124,7 @@ body {
     object-fit: cover;
     z-index: -1;
 }
+
 .overlay-content {
     padding: 10px;
     position: relative;
@@ -129,7 +132,7 @@ body {
     height: 338px;
 }
 
-.date{
+.date {
     background: #F77219;
     width: fit-content;
     border-radius: 6px;
@@ -137,20 +140,28 @@ body {
     color: #070614;
 }
 
-.add-button{
+.add-button {
     background: #F77219;
-    width: fit-content;
+    width: 32px;
     border-radius: 6px;
     padding: 8px;
     color: #070614;
+    height: 32px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
-.down{
+.add-button img {
+    height: 12px;
+}
+
+.down {
     bottom: 10px;
     position: absolute;
 }
 
-.presenter-img{
+.presenter-img {
     border-radius: 6px;
     width: 32px;
     height: 32px;
@@ -159,7 +170,8 @@ body {
     z-index: 1;
     position: relative;
 }
-.presenter-img img{
+
+.presenter-img img {
     object-fit: cover;
     overflow: hidden;
     border-radius: inherit;
@@ -167,15 +179,64 @@ body {
     border: #F77219 1px solid;
 }
 
-.presenter-name{
-        background: #F77219;
-        width: max-content;
-        border-radius: 0px 6px 6px 6px;
-        color: #070614;
-        display: flex;
-        align-items: center;
-        height: fit-content;
-        padding: 3px 3px 3px 33px;
-        z-index: 0;
-        position: absolute;
+.presenter-name {
+    background: #F77219;
+    width: max-content;
+    border-radius: 0px 6px 6px 6px;
+    color: #070614;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: 3px 3px 3px 33px;
+    z-index: 0;
+    position: absolute;
 }
+
+/* meet */
+.border-meet {
+    width: 157px;
+    height: 40px;
+    border-radius: 7px;
+    display: grid;
+    align-items: center;
+}
+
+.image-meet {
+    width: 22px;
+    height: auto;
+}
+
+.image-meet img {
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.egitmen {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: grid;
+    padding: 10px;
+}
+
+.img-egitmen {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.social {
+    position: relative;
+    align-items: end;
+    display: flex;
+    gap: 5px;
+}
+
+/* aside */
