@@ -1,6 +1,9 @@
 body {
     font-family: "Source Sans 3", serif !important;
     color: #F2F2F2 !important;
+    left: 68px;
+    right: 68px;
+    position: absolute;
 }
 
 .pointer {
@@ -57,6 +60,8 @@ body {
 }
 
 /* header */
+
+
 .logo {
     width: 175.48px;
     height: 32px;
@@ -246,6 +251,25 @@ body {
 }
 
 /* aside */
+.aside-date{
+    background: #F77219;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 8px;
+    color: #070614;
+}
+.aside-add-button{
+    background: #F77219;
+    width: 32px;
+    border-radius: 6px;
+    padding: 8px;
+    color: #070614;
+    height: 32px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
 
 /* footer */
 .mobile-nav {
@@ -290,7 +314,41 @@ body {
         display: flex;
     }
 
-    .lg-menu {
+    .hide {
         display: none;
+    }
+    .logo-cont{
+        width: 36px;
+        height: 36px;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+    body{
+        left: 16px;
+    right: 16px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .presenter-name {
+        width: 96px;
+        height: 33px;
+    }
+
+    .aside-date {
+        padding: 2px;
+        height: fit-content;
+    }
+    .aside-add-button{
+        width: 20px;
+        padding: 1px;
+        height: 22px;
+    }
+    .aside-add-button img {
+        height: 8px;
     }
 }
