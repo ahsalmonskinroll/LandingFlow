@@ -54,13 +54,20 @@ body {
 }
 
 /* hiza */
-.hiza {
+.hiza-a {
     align-items: center;
     display: flex;
+}
+.hiza-j{
+    display: flex;
+    justify-content: center;
 }
 
 /* header */
 
+.hide{
+    display: flex;
+}
 
 .logo {
     width: 175.48px;
@@ -122,6 +129,10 @@ body {
 }
 
 /* banner */
+.inside-nav{
+    display: block;
+}
+
 .banner {
     position: relative;
     width: 100%;
@@ -312,10 +323,14 @@ body {
 @media (max-width:768px) {
     .mobile-nav {
         display: flex;
+        bottom: 2px;
+        position: sticky;
+        z-index: 5;
     }
 
     .hide {
         display: none;
+        
     }
     .logo-cont{
         width: 36px;
@@ -330,6 +345,9 @@ body {
     body{
         left: 16px;
     right: 16px;
+    }
+    .inside-nav{
+        display: none;
     }
 }
 
