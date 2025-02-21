@@ -58,20 +58,24 @@ body {
     align-items: center;
     display: flex;
 }
-.hiza-j{
+
+.hiza-j {
     display: flex;
     justify-content: center;
 }
 
 /* header */
 
-.hide{
+.hide {
     display: flex;
 }
+
 
 .logo {
     width: 175.48px;
     height: 32px;
+    /* height: 100%;
+    width: 100%; */
     top: 42px;
     left: 42px;
 }
@@ -119,6 +123,16 @@ body {
     box-shadow: inset -4px -1px 7px 0px rgba(0, 0, 0, 0.5);
 }
 
+.bottom-border {
+    border-bottom: 2px solid #a5a5a5;
+    padding: 5px;
+    width: 20px;
+}
+
+.exit {
+    display: flex;
+}
+
 /* main */
 .grey-border {
     position: relative;
@@ -129,7 +143,7 @@ body {
 }
 
 /* banner */
-.inside-nav{
+.inside-nav {
     display: block;
 }
 
@@ -157,6 +171,11 @@ body {
     z-index: 1;
     height: 338px;
     display: grid;
+}
+
+.up {
+    display: flex;
+    justify-content: end;
 }
 
 .date {
@@ -262,7 +281,7 @@ body {
 }
 
 /* aside */
-.aside-border{
+.aside-border {
     position: relative;
     border-radius: 16px;
     height: auto;
@@ -270,18 +289,18 @@ body {
     background: #070614;
 }
 
-.aside-border::before{
+.aside-border::before {
     content: "";
     position: absolute;
     inset: -2px;
     border-radius: inherit;
-    background: linear-gradient(181deg, #a5a5a563 75%, #070614 108%);
+    background: linear-gradient(181deg, #a5a5a563 93%, #070614 100%);
     z-index: -1;
 }
 
-.aside-border2{
+.aside-border2 {
     position: relative;
-    /* border: 2px solid #a5a5a563; */
+    border: 2px solid #a5a5a563;
     border-radius: 16px;
     height: auto;
     padding: 10px;
@@ -289,7 +308,7 @@ body {
     z-index: 1;
 }
 
-.aside-border2::after{
+.aside-border2::before {
     content: "";
     position: absolute;
     inset: -2px;
@@ -298,14 +317,20 @@ body {
     z-index: -3;
 }
 
-.aside-date{
+.up-aside {
+    display: flex;
+    justify-content: end;
+}
+
+.aside-date {
     background: #F77219;
     width: fit-content;
     border-radius: 6px;
     padding: 8px;
     color: #070614;
 }
-.aside-add-button{
+
+.aside-add-button {
     background: #F77219;
     width: 32px;
     border-radius: 6px;
@@ -335,7 +360,7 @@ body {
     top: 0;
     left: 0;
     object-fit: cover;
-    z-index: -1;
+    z-index: 0;
     border: 1px solid #a5a5a5;
     border-radius: 15px;
 }
@@ -356,8 +381,18 @@ body {
     color: #070614;
 }
 
+.show {
+    display: none;
+}
+
 /* responsive */
-@media (max-width:768px) {
+@media (max-width:881px) {
+    .logo {
+        width: 148.48px;
+    }
+}
+
+@media (max-width:767px) {
     .mobile-nav {
         display: flex;
         bottom: 2px;
@@ -367,28 +402,44 @@ body {
 
     .hide {
         display: none;
-        
+
     }
-    .logo-cont{
+
+    .logo-cont {
         width: 36px;
         height: 36px;
     }
-    .logo{
+
+    .logo {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: left;
+        cursor: pointer;
     }
-    body{
+
+    body {
         left: 16px;
-    right: 16px;
+        right: 16px;
     }
-    .inside-nav{
+
+    .inside-nav {
+        display: none;
+    }
+
+    .exit {
         display: none;
     }
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) and (min-width: 767px) {
+    .up-aside {
+        flex-direction: column;
+        display: grid;
+        justify-content: start;
+    }
+
+
     .presenter-name {
         width: 96px;
         height: 33px;
@@ -398,12 +449,24 @@ body {
         padding: 2px;
         height: fit-content;
     }
-    .aside-add-button{
+
+    .aside-add-button {
         width: 20px;
         padding: 1px;
         height: 22px;
     }
+
     .aside-add-button img {
         height: 8px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: flex;
     }
 }
