@@ -38,34 +38,115 @@
   <body class="black">
     <header>
       <div class="container-fluid mt-3">
-        <!-- <button
-                class="btn custom-btn d-md-none"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarMenu1"
-              >
-                ☰
-              </button>
-              <div class="collapse d-md-block collapses" id="navbarMenu1">
-                <div class="row row-cols-auto reverse gap-3">
-                  <div class="col h-5">
-                    <a
-                      style="text-decoration: none; color: black"
-                      href="#contact"
-                      >Contact</a
-                    >
-                  </div>
-                  <div class="col h-5">
-                    <a style="text-decoration: none; color: black" href="#about"
-                      >About</a
-                    >
-                  </div>
-                  <div class="col h-5">My Blog</div>
-                  <div class="col h-5">Home</div>
-                </div>
-              </div> -->
 
-        <div class="row" style="height: 50px">
+        <button
+          class="btn custom-btn d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <div class="logo-cont">
+            <img class="logo" src="images/logo 1.png" alt="Eventself" />
+          </div>
+        </button>
+
+        <div class="collapse d-md-block collapses" id="navbarMenu">
+          <div class="row" style="height: 50px">
+            <div class="col-3 d-flex justify-content-start align-items-center">
+              <div class="logo-cont">
+                <img class="logo" src="images/logo 1.png" alt="Eventself" />
+              </div>
+            </div>
+            <div class="col-6 justify-content-center align-items-end hide">
+              <div class="row lg-menu gradient-border text-16">
+                <div class="col orange-border">
+                  <div
+                    class="d-flex justify-content-center gap-2 align-items-center pointer bold"
+                  >
+                    <img
+                      class="icon-boyut"
+                      src="images/icons/Home.png"
+                      alt="Home"
+                    /><span>Anasayfa</span>
+                  </div>
+                </div>
+  
+                <div class="col">
+                  <div
+                    class="d-flex justify-content-center gap-2 align-items-center pointer"
+                  >
+                    <img
+                      class="icon-boyut"
+                      src="images/icons/Book.png"
+                      alt="Home"
+                    /><span>Etkinliklerim</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex justify-content-center gap-2 align-items-center pointer"
+                  >
+                    <img
+                      class="icon-boyut1"
+                      src="images/icons/User.png"
+                      alt="Home"
+                    /><span>Profil</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 show hiza-j">
+              <div class="row lg-menu gradient-border text-16">
+                <div class="col hiza-j">
+                  <div
+                    class="d-flex justify-content-center gap-2 align-items-center pointer bold bottom-border"
+                  >
+                    <img
+                      class="icon-boyut"
+                      src="images/icons/Home.png"
+                      alt="Home"
+                    />
+                  </div>
+                </div>
+  
+                <div class="col">
+                  <div
+                    class="d-flex justify-content-center gap-2 align-items-center pointer"
+                  >
+                    <img
+                      class="icon-boyut"
+                      src="images/icons/Book.png"
+                      alt="Home"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex justify-content-center gap-2 align-items-center pointer"
+                  >
+                    <img
+                      class="icon-boyut1"
+                      src="images/icons/User.png"
+                      alt="Home"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 justify-content-end align-items-center exit">
+              <div
+                class="d-flex justify-content-center gap-2 align-items-center pointer"
+              >
+                <img
+                  class="icon-boyut1"
+                  src="images/icons/Logout.png"
+                  alt="Home"
+                /><span>Çıkış</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row" style="height: 50px">
           <div class="col-3 d-flex justify-content-start align-items-center">
             <div class="logo-cont">
               <img class="logo" src="images/logo 1.png" alt="Eventself" />
@@ -158,7 +239,7 @@
               /><span>Çıkış</span>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </header>
     <main>
@@ -208,8 +289,8 @@
               </div>
               <div class="meet mb-4">
                 <div class="container">
-                  <div class="row row-cols-2">
-                    <div class="col-auto p-0">
+                  <div class="row gap-2 meet-md">
+                    <div class="col-md-auto col-sm-12 p-0 hiza-a hiza-j">
                       <div class="border-meet white pointer">
                         <div
                           class="row row-cols-2"
@@ -234,7 +315,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-auto hiza-a px-4">
+                    <div class="col-md-auto col-sm-12 hiza-a hiza-j">
                       <div class="text-12">121 Katılımcı listesine ekledi</div>
                     </div>
                   </div>
@@ -261,11 +342,11 @@
                   <div class="title-24 mb-3">Eğitmen Hakkında</div>
                   <div class="about">
                     <div class="row hiza-j">
-                      <div class="col-auto hiza-a">
+                      <div class="col-xl-auto col-lg-12 hiza-a hiza-j">
                         <div class="egitmen">
                           <img
                             class="img-egitmen"
-                            src="images/egitmen.png"
+                            src="images/egitmen.jpeg"
                             alt="Eğitmen"
                           />
                           <div class="social">
@@ -284,7 +365,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col p-0 hiza-a">
+                      <div class="col-xl col-lg-12 p-0 hiza-a">
                         <div class="text-16 mt-2">
                           Solidity Eğitimi, blockchain tabanlı akıllı
                           sözleşmeler oluşturmak isteyenler için tasarlanmış
@@ -374,7 +455,6 @@
                 </div>
                 <div>
                   <div class="aside-border2 mt-3">
-                    <p>düzeltilecek</p>
                     <div class="row">
                       <div class="col-12">
                         <div class="little-banner">
